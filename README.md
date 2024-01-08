@@ -1,0 +1,1 @@
+Ok I actually used javascript again, I think I'm so use to react it just feels really different. I had a foundation of react and like really started to get it and now looking a plan javascript I actually understand some of it. Still in the beginning stagees though.
