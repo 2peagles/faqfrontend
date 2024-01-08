@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Accordion | Frontend Mentor</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<script>
+    function show_hide(itemId){
+       {
+            var click = document.getElementById(itemId);
+        } 
+        
+    if(click.style.display === "none") {
+        click.style.display = "block";
+    } else {
+        click.style.display="none";
+    }
+}
+</script>
+<body>
+    <main role="main">
+        <h1><img src="./ph_star-four-fill.svg" alt="star" role="img"/> FAQs</h1>
+
+        <ol role="contentinfo"class="contentinfo_container">
+                <li class="dropdown">
+                    <button onclick="show_hide('dropdownitem1')" id="btn">What is Frontend Mentor, and how will it help me?  <img src="./ph_plus-circle-fill.svg" alt="plus btn"/></button>
+                    <p id="dropdownitem1" class="contentonevisible">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects
+                    in HTML, CSS, and JavaScript. It’s suitable for all levels and ideal for portfolio building.</p>
+                </li>
+
+                <li class="dropdown">
+                    <button onclick="show_hide('dropdownitem2')" class="button">Is Frontend Mentor free? <img src="./ph_plus-circle-fill.svg"
+                            alt="plus btn" /></button>
+                    <p id="dropdownitem2">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects
+                    in HTML, CSS, and JavaScript. It’s suitable for all levels and ideal for portfolio building.</p>
+                </li>
+                <li class="dropdown">
+                    <button onclick="show_hide('dropdownitem3')" class="button">Can I use Frontend Mentor projects in my portfolio? <img
+                            src="./ph_plus-circle-fill.svg" alt="plus btn" /></button>
+                    <p id="dropdownitem3">Frontend Mentor offers realistic coding challenges to help developers improve their frontend
+                        coding skills with projects in HTML, CSS, and JavaScript. It’s suitable for all levels and ideal for portfolio
+                        building.</p>
+                </li>
+                <li class="dropdown">
+                    <button onclick="show_hide('dropdownitem4')" class="button">How can I get help if I'm stuck on a challenge? <img
+                            src="./ph_plus-circle-fill.svg" alt="plus btn" /></button>
+                    <p id="dropdownitem4">Frontend Mentor offers realistic coding challenges to help developers improve their frontend
+                        coding skills with projects in HTML, CSS, and JavaScript. It’s suitable for all levels and ideal for portfolio
+                        building.</p>
+                </li>
+        </ol>
+    </main>
+</body>
+</html>
